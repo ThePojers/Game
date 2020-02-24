@@ -18,7 +18,7 @@ if(randomNumber == 1){
   computerMove = 'Kamień';
 } else if (randomNumber == 2){
     computerMove = 'Papier'
-} else if (randomNumber == 3){
+} else (randomNumber == 3){
     computerMove = 'Nożyce'
 }
 
