@@ -4,8 +4,9 @@ let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = 'nieznany ruch';
+let argComputerMove = getMoveName(randomNumber);
 
+/*
 if(randomNumber == 1){
   computerMove = 'Kamień';
 } else if (randomNumber == 2){
@@ -13,8 +14,9 @@ if(randomNumber == 1){
 } else {
     computerMove = 'Nożyce';
 }
+*/
 
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('Mój ruch to: ' + argComputerMove);
 
 // ruch gracza 
 
@@ -22,8 +24,9 @@ let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.
 
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = 'nieznany ruch';
+let argPlayerMove = getMoveName(playerInput);
 
+/*
 if(playerInput == '1'){
   playerMove = 'Kamień';
 } else if(playerInput == '2'){
@@ -33,9 +36,11 @@ if(playerInput == '1'){
 } else {
      playerMove = 'Drogi użytkowniku. Wybrałeś liczbe z poza przedziału. Spróbuj ponownie';
 }
-printMessage('Twój ruch to: ' + playerMove);
+*/
 
+printMessage('Twój ruch to: ' + argPlayerMove);
 
+/*
 if( computerMove == 'Kamień' && playerMove == 'Papier'){
     printMessage('Owijasz kamień i rzucasz nim daleko. Gratulacje wygrałeś!');
   } else if (computerMove == 'Kamień' && playerMove == 'Nożyce'){
@@ -57,5 +62,7 @@ if( computerMove == 'Kamień' && playerMove == 'Papier'){
   } else {
     printMessage('Brak możliwości sprawdzenia wyniku ERROR@#%$ co sie dzieje. SKshhT...');
   }
- 
+ */
+
+printMessage(displayResults);
   
