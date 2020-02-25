@@ -22,7 +22,7 @@ function getMoveName(argMoveId){
 }
 
 function displayResults(argComputerMove, argPlayerMove) {
-	if( argComputerMove == 'Kamień' && argPlayerMove == 'Papier'){
+	if(argComputerMove == 'Kamień' && argPlayerMove == 'Papier'){
 		printMessage('Owijasz kamień i rzucasz nim daleko. Gratulacje wygrałeś!');
 	  } else if (argComputerMove == 'Kamień' && argPlayerMove == 'Nożyce'){
 		  printMessage('Panie, twoje ostrza zostały stępnione przez twardość kamienia. Przegrałeś :(');
