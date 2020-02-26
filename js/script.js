@@ -23,10 +23,10 @@ function playGame (playerInput){
     displayResults(argComputerMove, argPlayerMove);
 }
 
-document.getElementById("ressetto").addEventListener('click', function (){ 
-    playerInput = 4
-    animationPlayer (playerInput)
-});
+// document.getElementById("ressetto").addEventListener('click', function (){ 
+//     playerInput = 4
+//     animationPlayer (playerInput)
+// });
 
 document.getElementById("Play-Kamień").addEventListener('click', function (){ 
     playerInput = 1,
