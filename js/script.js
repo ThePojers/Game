@@ -1,24 +1,44 @@
-// ruch komputera 
 
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+function playGame (playerInput){
+    // ruch komputera 
+    clearMessages()
+    let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-console.log('Wylosowana liczba to: ' + randomNumber);
+    console.log('Wylosowana liczba to: ' + randomNumber);
 
-let argComputerMove = getMoveName(randomNumber);
+    let argComputerMove = getMoveName(randomNumber);
 
-printMessage('Mój ruch to: ' + argComputerMove);
+    printMessage('Mój ruch to: ' + argComputerMove);
 
-// ruch gracza 
+    // ruch gracza 
 
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+    // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
-console.log('Gracz wpisał: ' + playerInput);
+    console.log('Gracz wpisał: ' + playerInput);
 
-let argPlayerMove = getMoveName(playerInput);
+    let argPlayerMove = getMoveName(playerInput);
 
-printMessage('Twój ruch to: ' + argPlayerMove);
+    printMessage('Twój ruch to: ' + argPlayerMove);
 
-// Wynik gry 
+    // Wynik gry 
 
-displayResults(argComputerMove, argPlayerMove);
-  
+    displayResults(argComputerMove, argPlayerMove);
+}
+document.getElementById("Play-Kamień").addEventListener('click', function (){ 
+    playerInput = 1,
+    playGame (playerInput)
+});
+
+document.getElementById("Play-Papier").addEventListener('click', function (){ 
+    playerInput = 2,
+    playGame (playerInput)
+});
+
+document.getElementById("Play-Nożyce").addEventListener('click', function (){ 
+    playerInput = 3,
+    playGame (playerInput)
+});
+
+
+
+
