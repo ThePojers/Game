@@ -143,11 +143,7 @@ h2 {
 
 }
 
-#messages {
-    margin-top: 30px;
-    text-align: center;
-    color: white;
-}
+
 
 // animations
 
@@ -224,7 +220,27 @@ h2 {
 
 // Message 
 
+
 #messages {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
   padding-top: 50px;
+  font-size: 25px;
   
+}
+
+
+#messagescomputer {
+  position: absolute;
+  right: 10%;
+  margin-top: 600px;
+  font-size: 40px;
+}
+
+#messagesplayer {
+  position: absolute;
+  left: 10%;
+  margin-top: 600px;
+  font-size: 40px;
 }

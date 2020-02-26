@@ -4,38 +4,56 @@ function playGame (playerInput){
     clearMessages()
     
 
-    let argComputerMove = getMoveName(randomNumber);
+        let argComputerMove = getMoveName(randomNumber);
 
-    printMessage('Mój ruch to: ' + argComputerMove);
+        printMessageComp(argComputerMove);
 
-    // ruch gracza 
+        // ruch gracza 
 
-    console.log('Gracz wpisał: ' + playerInput);
+        console.log('Gracz wpisał: ' + playerInput);
 
-    let argPlayerMove = getMoveName(playerInput);
+        let argPlayerMove = getMoveName(playerInput);
 
-    printMessage('Twój ruch to: ' + argPlayerMove);
+        printMessagePlayer(argPlayerMove);
 
-    // Wynik gry 
+        // Wynik gry 
 
-    displayResults(argComputerMove, argPlayerMove);
+        displayResults(argComputerMove, argPlayerMove);
+
+    //     },
+    //     4 * 1000
+    // );
 }
 
 // document.getElementById("ressetto").addEventListener('click', function (){ 
 //     playerInput = 4
 //     animationPlayer (playerInput)
 // });
+var BGM = document.getElementById("mussik");
+BGM.autoplay = true;
+BGM.volume = 0.2;
+
+var oops  = document.getElementById("oops");
+
+
+var youwin  = document.getElementById("YouWin");
+
+var draw = document.getElementById("draw");
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
     
 console.log('Wylosowana liczba to: ' + randomNumber);
 
 document.getElementById("Play-Kamień").addEventListener('click', function (){ 
+    console.log ("0");
     playerInput = 1,
-    playGame (playerInput)
+    console.log ("1");
     compMoveAnimation(randomNumber)
+    console.log ("2");
     animationPlayer (playerInput)
-    
+    console.log ("3");
+    playGame (playerInput)
+    console.log ("4");
 });
 
 document.getElementById("Play-Papier").addEventListener('click', function (){ 

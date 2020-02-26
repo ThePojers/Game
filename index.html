@@ -7,14 +7,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
+	<audio controls="controls" hidden="true" loop="true" id="mussik"><source src="Music/y2mate.com - Tetris 99 - Main Theme_63hoSNvS6Z4.mp3"></audio>
+	<audio controls="controls" hidden="true" id="oops"><source src="Music/oops.mp3"></audio>
+	<audio controls="controls" hidden="true"  id="YouWin"><source src="Music/you win.mp3"></audio>
+	<audio controls="controls" hidden="true"  id="draw"><source src="Music/draw.mp3"></audio>
 	<div class="player">
 		<h3 class="you">Ty</h3>
 		<h3 class="computer">Komputer</h3>
 	</div>
+	<div id="messagesplayer"></div>
+	<div id="messagescomputer"></div>
 	<div class="container">
 		<h2>Zagrajmy w marynarza</h2>
+
 		<div id="messages"></div>
+
 		<div id="button">
+
 			<!-- <div id="nextRound">
 				<a href="#" id="ressetto">Kolejna runda</a>
 			</div> -->
@@ -86,5 +95,6 @@
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/Animation.js"></script>
+
 </body>
 </html>
