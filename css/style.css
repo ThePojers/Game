@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* Global */
 *, *::before, *::after {
@@ -37,13 +38,31 @@ h2 {
   right: 0;
 }
 
-#button {
-  padding-top: 50%;
+#nextRound {
+  -ms-flex: 100%;
+      flex: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+#playBtn {
+  -ms-flex: 100%;
+      flex: 100%;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  padding-top: 30px;
+}
+
+#button {
+  padding-top: 50%;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 #button a {
@@ -131,15 +150,39 @@ h2 {
   right: 0;
 }
 
-#start {
-  display: block;
-}
-
-#nomove {
+#kamień {
   display: none;
 }
 
-#move {
+#kamieńright {
+  display: none;
+}
+
+#kamieńfinish {
+  display: none;
+}
+
+#papier {
+  display: none;
+}
+
+#papierright {
+  display: none;
+}
+
+#papierfinish {
+  display: none;
+}
+
+#nożyce {
+  display: none;
+}
+
+#nożyceright {
+  display: none;
+}
+
+#nożycefinish {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

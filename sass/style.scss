@@ -47,12 +47,29 @@ h2 {
 }
 // Container-button%results
 
+#nextRound {
+  flex:100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#playBtn {
+  flex:100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
  #button {
     // flex:100%;
+    // padding-top: 50%;
+    // text-align: center;
+    // display: flex;
+    // justify-content: center;
     padding-top: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     a {
         margin-left: 50px;
         text-decoration: none;
@@ -147,39 +164,61 @@ h2 {
     right: 0;
 }
 
-#start {
-  display: block;
-}
 
-#nomove {
+
+#kamień {
     display: none;
 }
 
-#move {
+#kamieńright {
+  display: none;
+}
+
+#kamieńfinish {
   display: none;
 }
 
 // #kamień {
-//     display: none;
-// }
-
-// #kamieńright {
 //   display: none;
 // }
+
+
+
+
+
+#papier {
+  display: none;
+}
+
+#papierright {
+  display: none;
+}
+
+#papierfinish {
+  display: none;
+}
 
 // #papier {
 //   display: none;
 // }
 
-// #papierright {
-//   display: none;
-// }
+
+
+
+#nożyce {
+  display: none;
+}
+
+#nożyceright {
+  display: none;
+}
+
+#nożycefinish {
+  display: none;
+}
 
 // #nożyce {
 //   display: none;
 // }
 
-// #nożyceright {
-//   display: none;
-// }
 
