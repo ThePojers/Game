@@ -162,6 +162,10 @@ h2 {
   display: none;
 }
 
+#kamieńfinishright {
+  display: none;
+}
+
 #papier {
   display: none;
 }
@@ -171,6 +175,10 @@ h2 {
 }
 
 #papierfinish {
+  display: none;
+}
+
+#papierfinishright {
   display: none;
 }
 
@@ -184,5 +192,13 @@ h2 {
 
 #nożycefinish {
   display: none;
+}
+
+#nożycefinishright {
+  display: none;
+}
+
+#messages {
+  padding-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

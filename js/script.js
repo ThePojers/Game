@@ -2,9 +2,7 @@
 function playGame (playerInput){
     // ruch komputera 
     clearMessages()
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-    console.log('Wylosowana liczba to: ' + randomNumber);
+    
 
     let argComputerMove = getMoveName(randomNumber);
 
@@ -28,21 +26,29 @@ function playGame (playerInput){
 //     animationPlayer (playerInput)
 // });
 
+let randomNumber = Math.floor(Math.random() * 3 + 1);
+    
+console.log('Wylosowana liczba to: ' + randomNumber);
+
 document.getElementById("Play-Kamień").addEventListener('click', function (){ 
     playerInput = 1,
     playGame (playerInput)
+    compMoveAnimation(randomNumber)
     animationPlayer (playerInput)
+    
 });
 
 document.getElementById("Play-Papier").addEventListener('click', function (){ 
     playerInput = 2,
     playGame (playerInput)
+    compMoveAnimation(randomNumber)
     animationPlayer (playerInput)
 });
 
 document.getElementById("Play-Nożyce").addEventListener('click', function (){ 
     playerInput = 3,
     playGame (playerInput)
+    compMoveAnimation(randomNumber)
     animationPlayer (playerInput)
 });
 

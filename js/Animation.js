@@ -79,3 +79,68 @@ function animationPlayer(playerInput) {
     //     document.getElementById("start").style.display = "block";
     // }
 
+function compMoveAnimation(randomNumber) {
+    if( randomNumber == 1) {
+        document.getElementById("kamieńfinishright").style.display = "none";
+        document.getElementById("kamieńright").style.display = "block";
+        document.getElementById("startright").style.display = "none";
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("kamieńright").style.display = "none";
+                document.getElementById("kamieńfinishright").style.display = "block";
+            },
+            1 * 1000
+            );
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("kamieńfinishright").style.display = "none";
+                document.getElementById("startright").style.display = "block";
+            },
+            3 * 1000
+            );
+    }
+    else if( randomNumber == 2) {
+        document.getElementById("papierfinishright").style.display = "none";
+        document.getElementById("papierright").style.display = "block";
+        document.getElementById("startright").style.display = "none";
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("papierright").style.display = "none";
+                document.getElementById("papierfinishright").style.display = "block";
+            },
+            1 * 1000
+            );
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("papierfinishright").style.display = "none";
+                document.getElementById("startright").style.display = "block";
+            },
+            3 * 1000
+            );
+    }
+    else if( randomNumber == 3) {
+        document.getElementById("nożycefinishright").style.display = "none";
+        document.getElementById("nożyceright").style.display = "block";
+        document.getElementById("startright").style.display = "none";
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("nożyceright").style.display = "none";
+                document.getElementById("nożycefinishright").style.display = "block";
+            },
+            1 * 1000
+            );
+        setTimeout(
+            () => {
+                console.log('Hello after 4 seconds');
+                document.getElementById("nożycefinishright").style.display = "none";
+                document.getElementById("startright").style.display = "block";
+            },
+            3 * 1000
+            );
+    }
+}
