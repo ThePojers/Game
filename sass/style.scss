@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* Variables */
+$color-blue: #0097e6;
+$color-green: #33d9b2;
+$color-red: #ff5252;
+$color-textwhite: #ffffff;
+$color-textblue: #2c2c54;
+$font-text: Open Sans, sans-serif;
+$font-header: Oswald, sans-serif;
+$transition: all 1.5s;
+/* Global */
+
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    margin: 0;
+    font-size: 16px;
+    font-family: $font-text;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    // display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.you {
+    margin: 50px;
+    position: absolute;
+    font-size: 40px;
+}
+
+.computer {
+    font-size: 40px;
+    margin: 50px;
+    position: absolute;
+    right: 0;
+}
+// Container-button%results
+
+ #button {
+    // flex:100%;
+    padding-top: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    a {
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background: #fff;
+        border-radius: 999px;
+        text-shadow: 0 0 1px rgb(75, 5, 0);
+
+        &:hover {
+          box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+          animation: burn 1000ms ease-out forwards;
+
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            width: 100px;
+            height: 40px;
+            background: rgba(255, 230, 110, 1);
+            border-radius: 100%;
+            animation: flare 1000ms ease-out forwards;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            right: 40px;
+            width: 100px;
+            height: 40px;
+            background: rgba(255, 230, 110, 1);
+            border-radius: 100%;
+            animation: flare 1000ms ease-out forwards;
+          }
+        }
+      }
+
+      @keyframes flare {
+        100% {
+          transform: translateY(-20px) scale(1.5);
+          filter: blur(10px);
+          opacity: 0;
+        }
+      }
+
+      @keyframes burn {
+        0% {
+          color: rgba(255, 130, 110, 1);
+          background: rgba(255, 230, 110, 1);
+          box-shadow:
+            0 0 5px 0 rgba(200, 0, 10, 1),
+            0 0 5px 0 rgba(230, 30, 10, 0.8),
+            0 0 5px 0 rgba(230, 230, 10, 0.6);
+        }
+
+        100% {
+          color: rgba(0, 0, 0, 1);
+          background: rgba(255, 255, 255, 1);
+          box-shadow:
+            0 -35px 40px 30px rgba(255, 130, 10, 0),
+            0 -30px 30px 10px rgba(230, 30, 10, 0),
+            0 -20px 10px 0 rgba(255, 255, 10, 0);
+        }
+      }
+
+}
+
+#messages {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+// animations
+
+#left {
+    margin-top: 150px;
+    top: 0;
+    position: absolute;
+}
+
+#right {
+    margin-top: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#start {
+  display: block;
+}
+
+#nomove {
+    display: none;
+}
+
+#move {
+  display: none;
+}
+
+// #kamień {
+//     display: none;
+// }
+
+// #kamieńright {
+//   display: none;
+// }
+
+// #papier {
+//   display: none;
+// }
+
+// #papierright {
+//   display: none;
+// }
+
+// #nożyce {
+//   display: none;
+// }
+
+// #nożyceright {
+//   display: none;
+// }
+

@@ -1,0 +1,145 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  margin: 0;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.you {
+  margin: 50px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.computer {
+  font-size: 40px;
+  margin: 50px;
+  position: absolute;
+  right: 0;
+}
+
+#button {
+  padding-top: 50%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+#button a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  border-radius: 999px;
+  text-shadow: 0 0 1px #4b0500;
+}
+
+#button a:hover {
+  box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+  animation: burn 1000ms ease-out forwards;
+}
+
+#button a:hover::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  width: 100px;
+  height: 40px;
+  background: #ffe66e;
+  border-radius: 100%;
+  animation: flare 1000ms ease-out forwards;
+}
+
+#button a:hover::after {
+  content: '';
+  position: absolute;
+  right: 40px;
+  width: 100px;
+  height: 40px;
+  background: #ffe66e;
+  border-radius: 100%;
+  animation: flare 1000ms ease-out forwards;
+}
+
+@keyframes flare {
+  100% {
+    transform: translateY(-20px) scale(1.5);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes burn {
+  0% {
+    color: #ff826e;
+    background: #ffe66e;
+    box-shadow: 0 0 5px 0 #c8000a, 0 0 5px 0 rgba(230, 30, 10, 0.8), 0 0 5px 0 rgba(230, 230, 10, 0.6);
+  }
+  100% {
+    color: black;
+    background: white;
+    box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0), 0 -30px 30px 10px rgba(230, 30, 10, 0), 0 -20px 10px 0 rgba(255, 255, 10, 0);
+  }
+}
+
+#messages {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+#left {
+  margin-top: 150px;
+  top: 0;
+  position: absolute;
+}
+
+#right {
+  margin-top: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#start {
+  display: block;
+}
+
+#nomove {
+  display: none;
+}
+
+#move {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

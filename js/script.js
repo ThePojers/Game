@@ -12,8 +12,6 @@ function playGame (playerInput){
 
     // ruch gracza 
 
-    // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-
     console.log('Gracz wpisał: ' + playerInput);
 
     let argPlayerMove = getMoveName(playerInput);
@@ -24,9 +22,11 @@ function playGame (playerInput){
 
     displayResults(argComputerMove, argPlayerMove);
 }
+
 document.getElementById("Play-Kamień").addEventListener('click', function (){ 
     playerInput = 1,
     playGame (playerInput)
+    animationPlayer (playerInput)
 });
 
 document.getElementById("Play-Papier").addEventListener('click', function (){ 

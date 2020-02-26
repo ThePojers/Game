@@ -4,19 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="js/functions.js">
-	<link rel="stylesheet" href="js/script.js">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="player">
+		<h3 class="you">Ty</h3>
+		<h3 class="computer">Komputer</h3>
+	</div>
 	<div class="container">
+		<h2>Zagrajmy w marynarza</h2>
 		<div id="button">
-			<button id="Play-Kamień">Kamień</button>
-			<button id="Play-Nożyce">Nożyce</button>
-			<button id="Play-Papier">Papier</button>
+			<a href="#" id="Play-Kamień">Kamień</a>
+			<a href="#" id="Play-Nożyce">Nożyce</a>
+			<a href="#" id="Play-Papier">Papier</a>
 		</div>
 		<div id="messages"></div>
 	</div>
+	<div id="hand">
+		<div id="left">
+			<div id="nomove">
+				<div id="start">
+					<img src="images/nomoveHand left.gif">
+				</div>
+				<div id="kamieńfinish">
+					<img src="images/KamieńFinishLeft.gif">
+				</div>
+				<div id="papierfinish">
+					<img src="iamges/PapierFinishLeft.gif">
+				</div>
+				<div id="nożycefinish">
+					<img src="images/NożyceFinishLeft.gif">
+				</div>
+			</div>
+			<div id="move">
+				<div id="kamień">
+					<img src="images/Kamień.gif">
+				</div>
+				<div id="papier">
+
+				</div>
+				<div id="nożyce">
+
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div id="nomoveright">
+				<img src="images/nomovehandRgiht.gif">
+			</div>
+			<div id="moveright">
+				<div id="kamieńright">
+					<!-- <img src="images/KamieńRight.gif"> -->
+				</div>
+				<div id="papierright">
+
+				</div>
+				<div id="nożyceright">
+
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/Animation.js"></script>
 </body>
 </html>
