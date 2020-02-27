@@ -66,4 +66,5 @@ function displayResults(argComputerMove, argPlayerMove) {
 	  } else {
 		printMessage('Brak możliwości sprawdzenia wyniku ERROR@#%$ co sie dzieje. SKshhT...');
 	  }
-	}
+}
+
