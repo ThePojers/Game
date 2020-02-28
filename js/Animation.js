@@ -10,7 +10,7 @@ function animationPlayer(playerInput) {
         document.getElementById("start").style.display = "none";
         setTimeout(
             () => {
-              console.log('ime player');
+              // console.log('ime player');
               document.getElementById("kamień").style.display = "none";
               document.getElementById("kamieńfinish").style.display = "block";
               document.getElementById("messagesplayer").style.display = "block";
@@ -21,7 +21,7 @@ function animationPlayer(playerInput) {
           );
         setTimeout(
             () => {
-              console.log('Hello after 4 seconds');
+              // console.log('Hello after 4 seconds');
               document.getElementById("kamieńfinish").style.display = "none";
               document.getElementById("start").style.display = "block";
               document.getElementById("button").style.display = "block";
@@ -39,7 +39,7 @@ function animationPlayer(playerInput) {
         document.getElementById("start").style.display = "none";
         setTimeout(
             () => {
-              console.log('Hello after 4 seconds');
+              // console.log('Hello after 4 seconds');
               document.getElementById("papier").style.display = "none";
               document.getElementById("papierfinish").style.display = "block";
               document.getElementById("messagesplayer").style.display = "block";
@@ -50,7 +50,7 @@ function animationPlayer(playerInput) {
           );
         setTimeout(
             () => {
-              console.log('Hello after 4 seconds');
+              // console.log('Hello after 4 seconds');
               document.getElementById("papierfinish").style.display = "none";
               document.getElementById("start").style.display = "block";
               document.getElementById("button").style.display = "block";
@@ -68,7 +68,7 @@ function animationPlayer(playerInput) {
         document.getElementById("start").style.display = "none";
         setTimeout(
             () => {
-              console.log('Hello after 4 seconds');
+              // console.log('Hello after 4 seconds');
               document.getElementById("nożyce").style.display = "none";
               document.getElementById("nożycefinish").style.display = "block";
               document.getElementById("messagesplayer").style.display = "block";
@@ -79,7 +79,7 @@ function animationPlayer(playerInput) {
           );
         setTimeout(
             () => {
-              console.log('Hello after 4 seconds');
+              // console.log('Hello after 4 seconds');
               document.getElementById("nożycefinish").style.display = "none";
               document.getElementById("start").style.display = "block";
               document.getElementById("button").style.display = "block";
@@ -104,7 +104,7 @@ function compMoveAnimation(randomNumber) {
         document.getElementById("startright").style.display = "none";
         setTimeout(
             () => {
-                console.log('Time comp');
+                // console.log('Time comp');
                 document.getElementById("kamieńright").style.display = "none";
                 document.getElementById("kamieńfinishright").style.display = "block";
             },
@@ -112,7 +112,7 @@ function compMoveAnimation(randomNumber) {
             );
         setTimeout(
             () => {
-                console.log('Hello after 4 seconds');
+                // console.log('Hello after 4 seconds');
                 document.getElementById("kamieńfinishright").style.display = "none";
                 document.getElementById("startright").style.display = "block";
             },
@@ -125,7 +125,7 @@ function compMoveAnimation(randomNumber) {
         document.getElementById("startright").style.display = "none";
         setTimeout(
             () => {
-                console.log('Hello after 4 seconds');
+                // console.log('Hello after 4 seconds');
                 document.getElementById("papierright").style.display = "none";
                 document.getElementById("papierfinishright").style.display = "block";
             },
@@ -133,7 +133,7 @@ function compMoveAnimation(randomNumber) {
             );
         setTimeout(
             () => {
-                console.log('Hello after 4 seconds');
+                // console.log('Hello after 4 seconds');
                 document.getElementById("papierfinishright").style.display = "none";
                 document.getElementById("startright").style.display = "block";
             },
@@ -146,7 +146,7 @@ function compMoveAnimation(randomNumber) {
         document.getElementById("startright").style.display = "none";
         setTimeout(
             () => {
-                console.log('Hello after 4 seconds');
+                // console.log('Hello after 4 seconds');
                 document.getElementById("nożyceright").style.display = "none";
                 document.getElementById("nożycefinishright").style.display = "block";
             },
@@ -154,7 +154,7 @@ function compMoveAnimation(randomNumber) {
             );
         setTimeout(
             () => {
-                console.log('Hello after 4 seconds');
+                // console.log('Hello after 4 seconds');
                 document.getElementById("nożycefinishright").style.display = "none";
                 document.getElementById("startright").style.display = "block";
             },

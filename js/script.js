@@ -43,13 +43,17 @@ let hardmode = document.getElementById("witcher1");
 
 hardmode = 0;
 console.log (hardmode);
-mode(hardmode)
+verynormalmode(hardmode)
 
 document.getElementById("witcher1").addEventListener('click', function (){
     hardmode = hardmode + 1;
     console.log (hardmode);
-    mode(hardmode)
-    // mode(hardmode)
+    if (hardmode % 2 == 1) {
+        veryhardmode(hardmode)
+    }
+    else if (hardmode % 2 == 0){
+        verynormalmode(hardmode)
+    }
 });
 
 // function mode(hardmode) {
@@ -73,8 +77,7 @@ document.getElementById("witcher1").addEventListener('click', function (){
 
 
 console.log (hardmode);
-function mode(hardmode) {
-    if (hardmode % 2 == 1) {
+function veryhardmode(hardmode) {
         console.log ("nieparzyste");
         // hard mode 74% na wygraną close enough
         document.getElementById("Play-Kamień").addEventListener('click', function (){
@@ -157,8 +160,15 @@ function mode(hardmode) {
             };
         takietamprocenty (randomNumberStart)
         });
-    }
-    else if (hardmode % 2 == 0){
+        if (hardmode % 2 == 0) {
+            console.log ("wychodzę");
+            return;
+            
+        }
+
+}
+function verynormalmode(hardmode){
+    
         console.log ("parzyste");
         // normal mode
 
@@ -191,7 +201,11 @@ function mode(hardmode) {
             compMoveAnimation(randomNumber)
             animationPlayer (playerInput)
         });
-    }
+        if (hardmode % 2 == 1) {
+            console.log ("wychodzę");
+            return;
+            
+        }
 }
 
 
