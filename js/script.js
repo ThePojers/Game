@@ -49,9 +49,13 @@ document.getElementById("witcher1").addEventListener('click', function (){
     hardmode = hardmode + 1;
     console.log (hardmode);
     if (hardmode % 2 == 1) {
+        
+
         veryhardmode(hardmode)
     }
     else if (hardmode % 2 == 0){
+        
+
         verynormalmode(hardmode)
     }
 });
@@ -160,11 +164,40 @@ function veryhardmode(hardmode) {
             };
         takietamprocenty (randomNumberStart)
         });
-        if (hardmode % 2 == 0) {
-            console.log ("wychodzę");
-            return;
+        document.getElementById("Play-Nożyce").removeEventListener('click', function (){
+            let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+            console.log('Wylosowana liczba to: ' + randomNumber);
+            playerInput = 3,
+            playGame (playerInput, randomNumber)
+            compMoveAnimation(randomNumber)
+            animationPlayer (playerInput)
+        });
+        console.log ("dupa 0 ");
+        document.getElementById("Play-Papier").removeEventListener('click', function (){
+            let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+            console.log('Wylosowana liczba to: ' + randomNumber);
+            playerInput = 2,
+            playGame (playerInput, randomNumber)
+            compMoveAnimation(randomNumber)
+            animationPlayer (playerInput)
+        });
+        console.log ("dupa 1");
+        document.getElementById("Play-Kamień").removeEventListener('click', function (){
+            let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+            console.log('Wylosowana liczba to: ' + randomNumber);
+            playerInput = 1,
+            playGame (playerInput, randomNumber)
+            compMoveAnimation(randomNumber)
+            animationPlayer (playerInput)
+        });
+        // if (hardmode % 2 == 0) {
+        //     console.log ("wychodzę");
+        //     return;
             
-        }
+        // }
 
 }
 function verynormalmode(hardmode){
@@ -201,11 +234,89 @@ function verynormalmode(hardmode){
             compMoveAnimation(randomNumber)
             animationPlayer (playerInput)
         });
-        if (hardmode % 2 == 1) {
-            console.log ("wychodzę");
-            return;
+        document.getElementById("Play-Kamień").removeEventListener('click', function (){
+            var randomNumberStart = Math.random() * 3 + 1;
+            function takietamprocenty (randomNumberStart) {
+                if(randomNumberStart > 1.35 && randomNumberStart < 2 || randomNumberStart > 3 && randomNumberStart < 3.65 ){
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    randomNumber = 2;
+                    console.log('zmieniuona liczba to  ' + randomNumber);
+                    playerInput = 1,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+                else {
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    playerInput = 1,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+            };
+        takietamprocenty (randomNumberStart)
+        });
+        document.getElementById("Play-Papier").removeEventListener('click', function (){
+            var randomNumberStart = Math.random() * 3 + 1;
+            function takietamprocenty (randomNumberStart) {
+                if(randomNumberStart > 1.35 && randomNumberStart < 2.65 ){
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    randomNumber = 3;
+                    console.log('zmieniuona liczba to  ' + randomNumber);
+                    playerInput = 2,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+                else {
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    playerInput = 2,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+            };
+        takietamprocenty (randomNumberStart)
+        });
+        document.getElementById("Play-Nożyce").removeEventListener('click', function (){
+            var randomNumberStart = Math.random() * 3 + 1;
+            function takietamprocenty (randomNumberStart) {
+                if(randomNumberStart > 2.35 && randomNumberStart < 3.65 ){
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    randomNumber = 1;
+                    console.log('zmieniuona liczba to  ' + randomNumber);
+                    playerInput = 3,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+                else {
+                    console.log('Wylosowana liczba to: ' + randomNumberStart);
+                    var randomNumber = Math.floor(randomNumberStart);
+                    console.log('zaokrąglona liczba to ' + randomNumber);
+                    playerInput = 3,
+                    playGame (playerInput, randomNumber)
+                    compMoveAnimation(randomNumber)
+                    animationPlayer (playerInput)
+                }
+            };
+        takietamprocenty (randomNumberStart)
+        });
+        // if (hardmode % 2 == 1) {
+        //     console.log ("wychodzę");
+        //     return;
             
-        }
+        // }
 }
 
 
