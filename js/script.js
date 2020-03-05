@@ -25,7 +25,7 @@ function playGame (playerInput, randomNumber){
 }
 
 var BGM = document.getElementById("mussik");
-BGM.autoplay = false;
+BGM.autoplay = true;
 BGM.volume = 0.2;
 
 var oops  = document.getElementById("oops");
@@ -55,63 +55,56 @@ function numberMode (hardmode, playerInput){
         var randomNumberStart = Math.random() * 3 + 1;
         console.log ("hardmode");
         console.log('Wylosowana liczba to: ' + randomNumberStart);
-        (function () {
-            if (randomNumberStart > 1.35 && randomNumberStart < 2 || randomNumberStart > 3 && randomNumberStart < 3.65 ){
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 2;
-                console.log('zmieniuona liczba to  ' + randomNumber);
-            }
-            else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber); 
-            }
-        })()
-        return randomNumber;
+        if (randomNumberStart > 1.35 && randomNumberStart < 2 || randomNumberStart > 3 && randomNumberStart < 3.65 ){
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber);
+            randomNumber = 2;
+            console.log('zmieniuona liczba to  ' + randomNumber);
+            return randomNumber;
+        }
+        else {
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber); 
+            return randomNumber;
+        }
     }
     else if (hardmode == false && playerInput == 2) {
         var randomNumberStart = Math.random() * 3 + 1;
         console.log('Wylosowana liczba to: ' + randomNumberStart);
-        (function () {
-            if (randomNumberStart > 1.35 && randomNumberStart < 2.65){
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 3;
-                console.log('zmieniuona liczba to  ' + randomNumber);
-                
-            }
-            else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                
-            }
-        })()
-        return randomNumber;
+        if (randomNumberStart > 1.35 && randomNumberStart < 2.65){
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber);
+            randomNumber = 3;
+            console.log('zmieniuona liczba to  ' + randomNumber);
+            return randomNumber;
+        }
+        else {
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber);
+            return randomNumber;
+        }   
     }
     else if (hardmode == false && playerInput == 3) {
         var randomNumberStart = Math.random() * 3 + 1;
         console.log('Wylosowana liczba to: ' + randomNumberStart);
-        (function () {
-            if (randomNumberStart > 2.35 && randomNumberStart < 3.65 ){
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 1;
-                console.log('zmieniuona liczba to  ' + randomNumber);
-                
-            }
-            else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                var randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                
-            }
-        })()
-        return randomNumber;
+        if (randomNumberStart > 2.35 && randomNumberStart < 3.65 ){
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber);
+            randomNumber = 1;
+            console.log('zmieniuona liczba to  ' + randomNumber);
+            return randomNumber;
+        }
+        else {
+            console.log('Wylosowana liczba to: ' + randomNumberStart);
+            var randomNumber = Math.floor(randomNumberStart);
+            console.log('zaokrąglona liczba to ' + randomNumber);
+            return randomNumber;  
+        }
     }
 }
 
