@@ -11,39 +11,39 @@ $transition: all 1.5s;
 /* Global */
 
 *, *::before, *::after {
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    margin: 0;
-    font-size: 16px;
-    font-family: $font-text;
-    color: white;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  margin: 0;
+  font-size: 16px;
+  font-family: $font-text;
+  color: white;
 }
 .container {
-    max-width: 1200px;
-    height: 100vh;
-    // display: flex;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1200px;
+  height: 100vh;
+  // display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 h2 {
-    text-align: center;
-    letter-spacing: 10px;
+  text-align: center;
+  letter-spacing: 10px;
 }
 
 .you {
-    margin: 50px;
-    position: absolute;
-    font-size: 40px;
+  margin: 50px;
+  position: absolute;
+  font-size: 40px;
 }
 
 .computer {
-    font-size: 40px;
-    margin: 50px;
-    position: absolute;
-    right: 0;
+  font-size: 40px;
+  margin: 50px;
+  position: absolute;
+  right: 0;
 }
 
 p {
@@ -55,12 +55,7 @@ p {
 }
 
 // Container-button%results
-
 #nextRound {
-  // flex:100%;
-  // display: flex;
-  // text-align: center;
-  // justify-content: center;
   margin-top: 50px;
 }
 
@@ -73,55 +68,46 @@ p {
 }
 
  #button {
-    // flex:100%;
-    // padding-top: 50%;
-    // text-align: center;
-    // display: flex;
-    // justify-content: center;
-    padding-top: 50%;
-    flex-direction: column;
-    a {
-        margin-left: 50px;
-        text-decoration: none;
-        color: black;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        background: #fff;
-        border-radius: 999px;
-        text-shadow: 0 0 1px rgb(75, 5, 0);
-
-        &:hover {
-          box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
-          animation: burn 1000ms ease-out forwards;
-
-
-          &::before {
-            content: '';
-            position: absolute;
-            left: 40px;
-            width: 100px;
-            height: 40px;
-            background: rgba(255, 230, 110, 1);
-            border-radius: 100%;
-            animation: flare 1000ms ease-out forwards;
-          }
-
-          &::after {
-            content: '';
-            position: absolute;
-            right: 40px;
-            width: 100px;
-            height: 40px;
-            background: rgba(255, 230, 110, 1);
-            border-radius: 100%;
-            animation: flare 1000ms ease-out forwards;
-          }
+  padding-top: 50%;
+  flex-direction: column;
+  a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 999px;
+    text-shadow: 0 0 1px rgb(75, 5, 0);
+      &:hover {
+        box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+        animation: burn 1000ms ease-out forwards;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 40px;
+          width: 100px;
+          height: 40px;
+          background: rgba(255, 230, 110, 1);
+          border-radius: 100%;
+          animation: flare 1000ms ease-out forwards;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: 40px;
+          width: 100px;
+          height: 40px;
+          background: rgba(255, 230, 110, 1);
+          border-radius: 100%;
+          animation: flare 1000ms ease-out forwards;
         }
       }
+    }
 
       @keyframes flare {
         100% {
@@ -153,77 +139,65 @@ p {
 
 }
 
-
-
 // animations
-
 #left {
-    margin-top: 150px;
-    top: 0;
-    position: absolute;
+  margin-top: 150px;
+  top: 0;
+  position: absolute;
 }
 
 #right {
-    margin-top: 150px;
-    position: absolute;
-    top: 0;
-    right: 0;
+  margin-top: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-
-
-#kamień {
-    display: none;
-}
-
-#kamieńright {
+#stone {
   display: none;
 }
 
-#kamieńfinish {
+#stoneright {
   display: none;
 }
 
-#kamieńfinishright {
+#stonefinish {
   display: none;
 }
 
-
-
-
-
-#papier {
+#stonefinishright {
   display: none;
 }
 
-#papierright {
+#paper {
   display: none;
 }
 
-#papierfinish {
+#paperright {
   display: none;
 }
 
-#papierfinishright {
+#paperfinish {
   display: none;
 }
 
-
-
-
-#nożyce {
+#paperfinishright {
   display: none;
 }
 
-#nożyceright {
+#scissors {
   display: none;
 }
 
-#nożycefinish {
+#scissorsright {
   display: none;
 }
 
-#nożycefinishright {
+#scissorsfinish {
+  display: none;
+}
+
+#scissorsfinishright {
   display: none;
 }
 
@@ -256,8 +230,6 @@ p {
 }
 
 // modebutton
-
-/* The switch - the box around the slider */
 #witcher {
   position: relative;
   display: inline-block;
@@ -265,14 +237,12 @@ p {
   height: 34px;
 }
 
-/* Hide default HTML checkbox */
 #witcher input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -311,7 +281,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 /* Global */
 *, *::before, *::after {
@@ -146,51 +145,51 @@ p {
   right: 0;
 }
 
-#kamień {
+#stone {
   display: none;
 }
 
-#kamieńright {
+#stoneright {
   display: none;
 }
 
-#kamieńfinish {
+#stonefinish {
   display: none;
 }
 
-#kamieńfinishright {
+#stonefinishright {
   display: none;
 }
 
-#papier {
+#paper {
   display: none;
 }
 
-#papierright {
+#paperright {
   display: none;
 }
 
-#papierfinish {
+#paperfinish {
   display: none;
 }
 
-#papierfinishright {
+#paperfinishright {
   display: none;
 }
 
-#nożyce {
+#scissors {
   display: none;
 }
 
-#nożyceright {
+#scissorsright {
   display: none;
 }
 
-#nożycefinish {
+#scissorsfinish {
   display: none;
 }
 
-#nożycefinishright {
+#scissorsfinishright {
   display: none;
 }
 
@@ -216,7 +215,6 @@ p {
   font-size: 40px;
 }
 
-/* The switch - the box around the slider */
 #witcher {
   position: relative;
   display: inline-block;
@@ -224,14 +222,12 @@ p {
   height: 34px;
 }
 
-/* Hide default HTML checkbox */
 #witcher input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -266,7 +262,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
