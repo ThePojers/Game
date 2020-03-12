@@ -1,4 +1,4 @@
-function animationPlayer(playerInput) {
+const animationPlayer = function(playerInput) {
     if( playerInput == 1) {
         document.getElementById("messagesplayer").style.display = "none";
         document.getElementById("messagescomputer").style.display = "none";
@@ -87,8 +87,7 @@ function animationPlayer(playerInput) {
           );
     }
 }
-
-function compMoveAnimation(randomNumber) {
+const compMoveAnimation = function(randomNumber) {
     if( randomNumber == 1) {
         document.getElementById("stonefinishright").style.display = "none";
         document.getElementById("stoneright").style.display = "block";

@@ -1,28 +1,31 @@
-function printMessage(msg){
+// Muzyka
+const BGM = document.getElementById("mussik");
+BGM.autoplay = false;
+BGM.volume = 0.2;
+const oops  = document.getElementById("oops");
+const youwin  = document.getElementById("YouWin");
+const draw = document.getElementById("draw");
+const printMessage = function(msg){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
-
-function printMessagePlayer(msg){
+const printMessagePlayer = function(msg){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messagesplayer').appendChild(div);
 }
-
-function printMessageComp(msg){
+const printMessageComp = function(msg){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messagescomputer').appendChild(div);
 }
-
-function clearMessages(){
+let clearMessages = function(){
 	document.getElementById('messagescomputer').innerHTML = '';
 	document.getElementById('messagesplayer').innerHTML = '';
 	document.getElementById('messages').innerHTML = '';
 }
-
-function getMoveName(argMoveId){
+const getMoveName = function(argMoveId){
 	if(argMoveId == 1){
 	  return 'Kamień';
 	} else if (argMoveId == 2){
@@ -34,8 +37,7 @@ function getMoveName(argMoveId){
 	  return 'Drogi użytkowniku. Wybrałeś liczbe z poza przedziału. Spróbuj ponownie';
 	}
 }
-
-function displayResults(argComputerMove, argPlayerMove) {
+const displayResults = function(argComputerMove, argPlayerMove) {
 	if(argComputerMove == 'Kamień' && argPlayerMove == 'Papier'){
 		youwin.play()
 		printMessage('Owijasz kamień i rzucasz nim daleko. Gratulacje wygrałeś!');
@@ -67,4 +69,3 @@ function displayResults(argComputerMove, argPlayerMove) {
 		printMessage('Brak możliwości sprawdzenia wyniku ERROR@#%$ co sie dzieje. SKshhT...');
 	  }
 }
-
