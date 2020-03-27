@@ -1,6 +1,6 @@
 // Muzyka
 const BGM = document.getElementById("mussik");
-BGM.autoplay = false;
+BGM.autoplay = true;
 BGM.volume = 0.2;
 const oops  = document.getElementById("oops");
 const youwin  = document.getElementById("YouWin");
