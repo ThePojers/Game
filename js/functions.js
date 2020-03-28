@@ -28,14 +28,11 @@ let clearMessages = function(){
 const getMoveName = function(argMoveId){
 	if(argMoveId == 1){
 	  return 'Kamień';
-	} 
-	else if (argMoveId == 2){
+	} else if (argMoveId == 2){
 	  return 'Papier';
-	} 
-	else if (argMoveId == 3){
+	} else if (argMoveId == 3){
 	  return 'Nożyce';
-	} 
-	else {
+	} else {
 	  printMessage('Nie znam ruchu o id ' + argMoveId + '.');
 	  return 'Drogi użytkowniku. Wybrałeś liczbe z poza przedziału. Spróbuj ponownie';
 	}
@@ -70,5 +67,5 @@ const displayResults = function(argComputerMove, argPlayerMove) {
 		printMessage('Remis');
 	} else {
 		printMessage('Brak możliwości sprawdzenia wyniku ERROR@#%$ co sie dzieje. SKshhT...');
-	  }
+	}
 }

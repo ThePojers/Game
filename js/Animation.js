@@ -27,8 +27,7 @@ const animationPlayer = function(playerInput) {
             },
             3 * 1000
           );
-    }
-    else if( playerInput == 2) {
+    } else if( playerInput == 2) {
         document.getElementById("messagesplayer").style.display = "none";
         document.getElementById("messagescomputer").style.display = "none";
         document.getElementById("messages").style.display = "none";
@@ -56,8 +55,7 @@ const animationPlayer = function(playerInput) {
             },
             3 * 1000
           );
-    }
-    else if( playerInput == 3) {
+    } else if( playerInput == 3) {
         document.getElementById("messagesplayer").style.display = "none";
         document.getElementById("messagescomputer").style.display = "none";
         document.getElementById("messages").style.display = "none";
@@ -108,8 +106,7 @@ const compMoveAnimation = function(randomNumber) {
             },
             3 * 1000
             );
-    }
-    else if( randomNumber == 2) {
+    } else if( randomNumber == 2) {
         document.getElementById("paperfinishright").style.display = "none";
         document.getElementById("paperright").style.display = "block";
         document.getElementById("startright").style.display = "none";
@@ -129,8 +126,7 @@ const compMoveAnimation = function(randomNumber) {
             },
             3 * 1000
             );
-    }
-    else if( randomNumber == 3) {
+    } else if( randomNumber == 3) {
         document.getElementById("scissorsfinishright").style.display = "none";
         document.getElementById("scissorsright").style.display = "block";
         document.getElementById("startright").style.display = "none";
