@@ -32,9 +32,7 @@
             console.log('Wylosowana liczba to: ' + randomNumberStart);
             if (randomNumberStart > 1.35 && randomNumberStart < 2 || randomNumberStart > 3 && randomNumberStart < 3.65 ){
                 console.log('Wylosowana liczba to: ' + randomNumberStart);
-                let randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 2;
+                const randomNumber = 2;
                 console.log('zmieniuona liczba to  ' + randomNumber);
                 return randomNumber;
             }
@@ -50,9 +48,7 @@
             console.log('Wylosowana liczba to: ' + randomNumberStart);
             if (randomNumberStart > 1.35 && randomNumberStart < 2.65){
                 console.log('Wylosowana liczba to: ' + randomNumberStart);
-                let randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 3;
+                const randomNumber = 3;
                 console.log('zmieniuona liczba to  ' + randomNumber);
                 return randomNumber;
             }
@@ -68,9 +64,7 @@
             console.log('Wylosowana liczba to: ' + randomNumberStart);
             if (randomNumberStart > 2.35 && randomNumberStart < 3.65 ){
                 console.log('Wylosowana liczba to: ' + randomNumberStart);
-                let randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                randomNumber = 1;
+                const randomNumber = 1;
                 console.log('zmieniuona liczba to  ' + randomNumber);
                 return randomNumber;
             }
