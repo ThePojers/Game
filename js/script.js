@@ -78,7 +78,7 @@
     }
 
     document.getElementById("Play-scissors").addEventListener('click', function(){
-        playerInput = 3,
+        const playerInput = 3,
         randomNumber = randomComputerMove(hardmode, playerInput)
         console.log (randomNumber);
         playGame(playerInput, randomNumber)
@@ -86,14 +86,14 @@
         animationPlayer(playerInput)
     });
     document.getElementById("Play-paper").addEventListener('click', function(){
-        playerInput = 2,
+        const playerInput = 2,
         randomNumber = randomComputerMove(hardmode, playerInput)
         playGame(playerInput, randomNumber)
         compMoveAnimation(randomNumber)
         animationPlayer(playerInput)
     });
     document.getElementById("Play-stone").addEventListener('click', function(){
-        playerInput = 1,
+        const playerInput = 1,
         randomNumber = randomComputerMove(hardmode, playerInput)
         playGame(playerInput, randomNumber)
         compMoveAnimation(randomNumber)
