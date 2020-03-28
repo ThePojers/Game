@@ -21,21 +21,15 @@
     });
     const randomComputerMove = function(hardmode, playerInput){
         if(hardmode == true){
-            console.log ("normaMode");
-            const randomNumber = Math.floor(Math.random() * 3 + 1);
-            console.log('Wylosowana liczba to: ' + randomNumber); 
-            return randomNumber;
+            return Math.floor(Math.random() * 3 + 1);
         } else if (hardmode == false && playerInput == 1) {
             const randomNumberStart = Math.random() * 3 + 1;
             console.log ("hardmode");
             console.log('Wylosowana liczba to: ' + randomNumberStart);
             if (randomNumberStart > 1.35 && randomNumberStart < 2 || randomNumberStart > 3 && randomNumberStart < 3.65 ){
                 return 2;
-            } else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                const randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber); 
-                return randomNumber;
+            } else { 
+                return Math.floor(randomNumberStart);
             }
         } else if (hardmode == false && playerInput == 2) {
             const randomNumberStart = Math.random() * 3 + 1;
@@ -43,10 +37,7 @@
             if (randomNumberStart > 1.35 && randomNumberStart < 2.65){
                 return 3;
             } else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                const randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                return randomNumber;
+                return Math.floor(randomNumberStart);
             }   
         } else if (hardmode == false && playerInput == 3) {
             const randomNumberStart = Math.random() * 3 + 1;
@@ -54,10 +45,7 @@
             if (randomNumberStart > 2.35 && randomNumberStart < 3.65 ){
                 return 1;
             } else {
-                console.log('Wylosowana liczba to: ' + randomNumberStart);
-                const randomNumber = Math.floor(randomNumberStart);
-                console.log('zaokrąglona liczba to ' + randomNumber);
-                return randomNumber;  
+                return Math.floor(randomNumberStart);  
             }
         }
     }
